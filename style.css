@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    counter-reset: parasitoCount;
+}
+
+form {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+select, input {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (min-width: 600px) {
+    form {
+        width: 50%;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#trofozoitos-container, #parasitos-container {
+    margin-bottom: 15px;
+}
+
+.trofozoito-item, .parasito-item {
+    margin-bottom: 10px;
+}
+
+.trofozoito-item select, .parasito-item select {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+button#add_trofozoito, button#add_parasito {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#add_trofozoito:hover, button#add_parasito:hover {
+    background-color: #0056b3;
+}
+
+#parasitos-container .parasito-item:nth-child(n):before {
+    content: "Parásito " counter(parasitoCount);
+    counter-increment: parasitoCount;
+    font-weight: bold;
+}
+
+#parasitos-container .parasito-item:first-child:before {
+    content: "";
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+@media (max-width: 767px) {
+    .row-cols-md-2 .col {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Estilos del botón */
+.btn-volver {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-volver:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Estilo para la barra de búsqueda */
+.form-inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.form-inline .form-control {
+    flex: 1; /* Que el campo de búsqueda ocupe todo el espacio posible */
+    max-width: 300px; /* Máximo ancho del campo de búsqueda */
+}
+
+.form-inline .btn {
+    flex: 0 0 auto; /* Evitar que el botón afecte el ancho del campo de búsqueda */
+    margin-left: 10px; /* Agregar un espacio entre el campo de búsqueda y el botón */
+}
+
+/* Estilos adicionales para el botón de búsqueda */
+.btn-primary {
+    min-width: 100px; /* Ancho mínimo del botón */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.centered-card {
+    margin: 10px;
+}
